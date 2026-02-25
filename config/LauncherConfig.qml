@@ -99,7 +99,7 @@ JsonObject {
             name: "Shutdown",
             icon: "power_settings_new",
             description: "Shutdown the system",
-            command: ["systemctl", "poweroff"],
+            command: ["loginctl", "poweroff"],
             enabled: true,
             dangerous: true
         },
@@ -107,7 +107,7 @@ JsonObject {
             name: "Reboot",
             icon: "cached",
             description: "Reboot the system",
-            command: ["systemctl", "reboot"],
+            command: ["loginctl", "reboot"],
             enabled: true,
             dangerous: true
         },
@@ -131,7 +131,7 @@ JsonObject {
             name: "Sleep",
             icon: "bedtime",
             description: "Suspend then hibernate",
-            command: ["systemctl", "suspend-then-hibernate"],
+            command: ["loginctl", "suspend"],
             enabled: true,
             dangerous: false
         },

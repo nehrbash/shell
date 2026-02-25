@@ -28,7 +28,7 @@ JsonObject {
             },
             {
                 timeout: 600,
-                idleAction: ["systemctl", "suspend-then-hibernate"]
+                idleAction: ["loginctl", "suspend"]
             }
         ]
     }
